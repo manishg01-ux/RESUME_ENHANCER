@@ -1,0 +1,118 @@
+export interface SkillItem {
+  skill: string;
+  category: string;
+  frequency: number;
+}
+
+export const SKILLS_DATASET: SkillItem[] = [
+  // Programming & Engineering
+  { skill: 'Java', category: 'Software Development', frequency: 95 },
+  { skill: 'Python', category: 'Software Development', frequency: 98 },
+  { skill: 'JavaScript', category: 'Software Development', frequency: 92 },
+  { skill: 'TypeScript', category: 'Software Development', frequency: 89 },
+  { skill: 'C++', category: 'Software Development', frequency: 75 },
+  { skill: 'C#', category: 'Software Development', frequency: 78 },
+  { skill: 'Spring Boot', category: 'Software Development', frequency: 82 },
+  { skill: 'React', category: 'Frontend', frequency: 91 },
+  { skill: 'Angular', category: 'Frontend', frequency: 72 },
+  { skill: 'Vue.js', category: 'Frontend', frequency: 68 },
+  { skill: 'HTML5', category: 'Frontend', frequency: 85 },
+  { skill: 'CSS3', category: 'Frontend', frequency: 82 },
+  { skill: 'Tailwind CSS', category: 'Frontend', frequency: 74 },
+  { skill: 'Node.js', category: 'Backend', frequency: 88 },
+  { skill: 'Express.js', category: 'Backend', frequency: 76 },
+  { skill: 'REST API', category: 'Backend', frequency: 94 },
+  { skill: 'GraphQL', category: 'Backend', frequency: 71 },
+  { skill: 'Microservices', category: 'Architecture', frequency: 86 },
+  { skill: 'Docker', category: 'DevOps', frequency: 90 },
+  { skill: 'Kubernetes', category: 'DevOps', frequency: 84 },
+  { skill: 'CI/CD', category: 'DevOps', frequency: 88 },
+  { skill: 'Jenkins', category: 'DevOps', frequency: 75 },
+  { skill: 'Git', category: 'Tools', frequency: 96 },
+  { skill: 'GitHub', category: 'Tools', frequency: 92 },
+  { skill: 'GitLab', category: 'Tools', frequency: 78 },
+  { skill: 'AWS', category: 'Cloud', frequency: 95 },
+  { skill: 'Azure', category: 'Cloud', frequency: 87 },
+  { skill: 'GCP', category: 'Cloud', frequency: 81 },
+  { skill: 'Linux', category: 'Systems', frequency: 85 },
+  { skill: 'SQL', category: 'Databases', frequency: 96 },
+  { skill: 'PostgreSQL', category: 'Databases', frequency: 85 },
+  { skill: 'MySQL', category: 'Databases', frequency: 83 },
+  { skill: 'MongoDB', category: 'Databases', frequency: 80 },
+  { skill: 'Redis', category: 'Databases', frequency: 72 },
+  { skill: 'Kafka', category: 'Messaging', frequency: 78 },
+  { skill: 'RabbitMQ', category: 'Messaging', frequency: 65 },
+
+  // Data & Analytics
+  { skill: 'Data Analysis', category: 'Data', frequency: 94 },
+  { skill: 'Data Visualization', category: 'Data', frequency: 86 },
+  { skill: 'Power BI', category: 'Data', frequency: 89 },
+  { skill: 'Tableau', category: 'Data', frequency: 88 },
+  { skill: 'Pandas', category: 'Data Science', frequency: 82 },
+  { skill: 'NumPy', category: 'Data Science', frequency: 78 },
+  { skill: 'Machine Learning', category: 'Data Science', frequency: 85 },
+  { skill: 'Scikit-Learn', category: 'Data Science', frequency: 74 },
+  { skill: 'TensorFlow', category: 'AI/ML', frequency: 72 },
+  { skill: 'PyTorch', category: 'AI/ML', frequency: 75 },
+  { skill: 'ETL', category: 'Data Engineering', frequency: 84 },
+  { skill: 'Data Pipelines', category: 'Data Engineering', frequency: 81 },
+  { skill: 'Snowflake', category: 'Data Warehousing', frequency: 79 },
+  { skill: 'BigQuery', category: 'Data Warehousing', frequency: 76 },
+  { skill: 'Apache Spark', category: 'Big Data', frequency: 73 },
+
+  // Quality Assurance & Testing
+  { skill: 'Automation Testing', category: 'QA', frequency: 88 },
+  { skill: 'Selenium', category: 'QA', frequency: 84 },
+  { skill: 'Cypress', category: 'QA', frequency: 78 },
+  { skill: 'Playwright', category: 'QA', frequency: 76 },
+  { skill: 'JUnit', category: 'QA', frequency: 80 },
+  { skill: 'TestNG', category: 'QA', frequency: 75 },
+  { skill: 'API Testing', category: 'QA', frequency: 86 },
+  { skill: 'Postman', category: 'QA', frequency: 90 },
+  { skill: 'Manual Testing', category: 'QA', frequency: 82 },
+  { skill: 'Regression Testing', category: 'QA', frequency: 81 },
+  { skill: 'Jira', category: 'Management Tools', frequency: 95 },
+
+  // Business Analysis & Project Management
+  { skill: 'Requirements Gathering', category: 'Business Analysis', frequency: 92 },
+  { skill: 'Business Process Mapping', category: 'Business Analysis', frequency: 86 },
+  { skill: 'User Stories', category: 'Agile', frequency: 91 },
+  { skill: 'UAT', category: 'Business Analysis', frequency: 84 },
+  { skill: 'Gap Analysis', category: 'Business Analysis', frequency: 80 },
+  { skill: 'Agile', category: 'Methodology', frequency: 96 },
+  { skill: 'Scrum', category: 'Methodology', frequency: 94 },
+  { skill: 'Kanban', category: 'Methodology', frequency: 78 },
+  { skill: 'Project Planning', category: 'Project Management', frequency: 90 },
+  { skill: 'Risk Management', category: 'Project Management', frequency: 85 },
+  { skill: 'Stakeholder Management', category: 'Project Management', frequency: 93 },
+  { skill: 'Budgeting', category: 'Project Management', frequency: 79 },
+  { skill: 'Sprint Planning', category: 'Agile', frequency: 88 },
+  { skill: 'Asana', category: 'Management Tools', frequency: 70 },
+  { skill: 'Confluence', category: 'Management Tools', frequency: 87 },
+
+  // Marketing & Sales
+  { skill: 'SEO', category: 'Marketing', frequency: 88 },
+  { skill: 'SEM', category: 'Marketing', frequency: 82 },
+  { skill: 'Content Strategy', category: 'Marketing', frequency: 84 },
+  { skill: 'Google Analytics', category: 'Marketing', frequency: 90 },
+  { skill: 'Email Marketing', category: 'Marketing', frequency: 79 },
+  { skill: 'Social Media Marketing', category: 'Marketing', frequency: 81 },
+  { skill: 'HubSpot', category: 'Marketing Tools', frequency: 83 },
+  { skill: 'Salesforce', category: 'CRM', frequency: 89 },
+  { skill: 'Lead Generation', category: 'Sales', frequency: 85 },
+  { skill: 'Conversion Rate Optimization', category: 'Marketing', frequency: 77 },
+  { skill: 'A/B Testing', category: 'Marketing', frequency: 82 },
+
+  // Soft Skills & Professional Competencies
+  { skill: 'Cross-functional Leadership', category: 'Soft Skills', frequency: 90 },
+  { skill: 'Problem Solving', category: 'Soft Skills', frequency: 94 },
+  { skill: 'Strategic Planning', category: 'Soft Skills', frequency: 88 },
+  { skill: 'Communication Skills', category: 'Soft Skills', frequency: 96 },
+  { skill: 'Time Management', category: 'Soft Skills', frequency: 85 },
+  { skill: 'Team Collaboration', category: 'Soft Skills', frequency: 92 },
+  { skill: 'Adaptability', category: 'Soft Skills', frequency: 84 },
+  { skill: 'Critical Thinking', category: 'Soft Skills', frequency: 87 },
+  { skill: 'Negotiation', category: 'Soft Skills', frequency: 78 }
+];
+
+export const COMMON_SKILLS_KEYWORDS = SKILLS_DATASET.map(s => s.skill);
